@@ -18,8 +18,7 @@ dee profiler 主要采用字节码技术，在程序运行时动态注入时间�
 
 还需要再A8中或者dee可视化配置工具的JVM参数中加入：<br/>
 
--javaagent:{yourpath}/profiler-1.0-SNAPSHOT.jar
--Dprofile.properties={yourpath}/profile.properties
+-javaagent:{yourpath}/profiler-1.0-SNAPSHOT.jar -Dprofile.properties={yourpath}/profile.properties
 
 ## OK let's try it
 
