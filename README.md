@@ -1,7 +1,7 @@
 # Dee profiler
 
-Dee profiler 是专门为Dee量身定做的执行时间检测工具。<br/>
-主要是检测Flow和Adapter的执行时间，输出log，方便定位一人任务到底是哪里消耗最多时间。
+Dee profiler 是专门为Dee量身定做的执行时间监测工具。<br/>
+主要是监测Flow和Adapter的执行时间，输出log，方便定位一个任务到底是哪里消耗最多时间。
 
 # Features
 
