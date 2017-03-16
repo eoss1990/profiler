@@ -1,6 +1,6 @@
 # dee profiler
 
-dee profiler 是专门为dee量身定做的执行时间检测工具。
+dee profiler 是专门为dee量身定做的执行时间检测工具。<br/>
 主要是检测Flow和Adapter的执行时间，输出log，方便定位一人任务到底是哪里消耗最多时间。
 
 # Features
@@ -21,5 +21,10 @@ dee profiler 主要采用字节码技术，在程序运行时动态注入时间�
 -javaagent:{yourpath}/profiler-1.0-SNAPSHOT.jar -Dprofile.properties={yourpath}/profile.properties
 
 ## OK let's try it
+
+# Notice
+目前对Flow throw Exception的情况没有支持。<br/>
+原因是dee中都是在方法上throw Excepiton，不方便操作字节码，需要动代码框架，对版本耦合度太高，不容易适配所有版本。<br/>
+后续优化。
 
 
