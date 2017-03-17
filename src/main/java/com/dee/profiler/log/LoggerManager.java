@@ -25,4 +25,8 @@ public class LoggerManager {
     public static void setName(String name){
         THREAD_LOCAL.get().setName(name);
     }
+
+    public static void remove(){
+        THREAD_LOCAL.remove();
+    }
 }

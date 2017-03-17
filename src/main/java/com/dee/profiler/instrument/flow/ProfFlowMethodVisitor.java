@@ -18,6 +18,7 @@ public class ProfFlowMethodVisitor extends MethodVisitor {
      */
     @Override
     public void visitCode() {
+        mv.visitMethodInsn(INVOKESTATIC, "com/dee/profiler/log/LoggerManager", "remove", "()V", false);
         mv.visitVarInsn(ALOAD, 0);
         mv.visitFieldInsn(GETFIELD, "com/seeyon/v3x/dee/context/Flow", "name", "Ljava/lang/String;");
         mv.visitMethodInsn(INVOKESTATIC, "com/dee/profiler/log/LoggerManager", "setName", "(Ljava/lang/String;)V", false);
