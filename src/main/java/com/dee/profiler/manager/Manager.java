@@ -30,12 +30,21 @@ public class Manager {
             throw new RuntimeException(String.format("配置文件路径:%s错误", configUrl));
 
         Properties p = new Properties();
-        try (InputStream in = new FileInputStream(configUrl)) {
+        InputStream in = null;
+        try {
+            in = new FileInputStream(configUrl);
             p.load(in);
             logPath = p.getProperty("logPath");
 
         } catch (Exception e) {
             throw new RuntimeException(String.format("配置文件读取错误%s", configUrl));
+        } finally {
+            try {
+                if (in != null)
+                    in.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
