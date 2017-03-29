@@ -8,6 +8,11 @@ import java.util.Date;
  */
 public class Test {
 
+    /**
+     * 可以反编译并输出字节码
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         String[] strings = {"/Users/yangyu/Downloads/flowcompare/Flow.class"};
         ASMifier.main(strings);
