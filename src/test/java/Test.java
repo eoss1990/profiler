@@ -9,7 +9,7 @@ import java.util.Date;
 public class Test {
 
     /**
-     * 可以反编译并输出字节码
+     * 可以输出如何通过ASM构建该Class
      * @param args
      * @throws Exception
      */
